@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;  /* If you set box-sizing: border-box; on an element, padding and border are included in the width and height */
+}
+body{
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;            /* x axix */
+justify-content: center;        /*  y axix*/
+}
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 20px;
+}
+form input{
+    height: 30px;
+    margin-bottom: 10px;
+}
+form input[type="submit"]{
+
+    width: 50%;
+    border-radius:10px;
+    border: none;
+    background:blue;
+    color: white;
+}
+form input[type="submit"]:hover{
+    cursor :pointer;   /* check it issue */
+}
+
+.stop{
+    transition: 0.01s;
+}
+.move{
+    transform: translateX(100%);
+}
